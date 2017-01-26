@@ -15,3 +15,6 @@ brew install vim
 
 # git
 brew install git
+
+# GUI raspberry pi installer
+brew cask install etcher
