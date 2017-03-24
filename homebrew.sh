@@ -7,6 +7,18 @@ fi
 brew install pyenv
 brew install pyenv-virtualenv
 
+# anaconda
+cat << EOF >> ~/.bash_profile
+export PYENV_ROOT=\${HOME}/.pyenv
+export PATH=\${PYENV_ROOT}/bin:\$PATH
+eval "\$(pyenv init -)"
+EOF
+
+source ~/.bash_profile
+
+pyenv install anaconda3-4.3.0   //confirm  version
+pyenv global anaconda3-4.3.0
+
 # byobu (virtual terminal)
 brew install byobu
 
