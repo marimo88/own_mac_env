@@ -30,3 +30,6 @@ brew install git
 
 # GUI raspberry pi installer
 brew cask install etcher
+
+# python module
+pip install pyperclip
