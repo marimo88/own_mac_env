@@ -1,3 +1,5 @@
+#
+
 # Homebrew
 if ! command -v brew > /dev/null; then
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -19,6 +21,9 @@ source ~/.bash_profile
 pyenv install anaconda3-4.3.0   //confirm  version
 pyenv global anaconda3-4.3.0
 
+# brew cask install
+brew install caskroom/cask/brew-cask
+
 # byobu (virtual terminal)
 brew install byobu
 
@@ -33,3 +38,10 @@ brew cask install etcher
 
 # python module
 pip install pyperclip
+
+# atom install
+brew cask search atom
+brew cask install atom
+
+# autopep8 install(auto-beautyに必要)
+pip install autopep8
