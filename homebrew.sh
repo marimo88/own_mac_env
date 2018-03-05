@@ -5,6 +5,10 @@ if ! command -v brew > /dev/null; then
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
+brew update --force && brew upgrade #アップデート
+
+#---------------Python関係--------------
+
 # pyenv
 brew install pyenv
 brew install pyenv-virtualenv
@@ -20,6 +24,7 @@ source ~/.bash_profile
 
 pyenv install anaconda3-4.3.0   //confirm  version
 pyenv global anaconda3-4.3.0
+
 
 # brew cask install
 brew install caskroom/cask/brew-cask
